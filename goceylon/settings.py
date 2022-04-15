@@ -123,25 +123,18 @@ USE_L10N = True
 
 USE_TZ = True
 
-# Base url to serve media files
-MEDIA_URL = '/media/'
 
-# Path where media is stored
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media/')
-
-# Cache config for django-bootstrap-icons
-BS_ICONS_CACHE = os.path.join(MEDIA_ROOT, 'icon_cache')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-STATIC_ROOT=os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
-MEDIA_URL='/images/'
+MEDIA_URL = '/images/'
 
 #Static files directory
 STATICFILES_DIRS = [
     #BASE_DIR/'static'
    os.path.join(BASE_DIR, 'static'),
 ]
-MEDIA_ROOT =os.path.join(BASE_DIR, 'static/images')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
