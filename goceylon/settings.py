@@ -140,4 +140,4 @@ STATICFILES_DIRS = [
 ]
 MEDIA_ROOT = BASE_DIR / 'static/images'
 
-STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
+#STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
