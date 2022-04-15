@@ -26,9 +26,9 @@ AWS_S3 = "https://qprabnd93g.execute-api.ap-southeast-1.amazonaws.com/ocrDev/api
 SECRET_KEY = 'a$+jxf9twh)7!ghj*jtfe3iar5b^cfzmmw_)t0jfn8d7$-qg&b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['192.168.1.2','192.168.137.215','192.168.1.9','127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1:8000', 'goceylon.herokuapp.com/', 'goceylon.lk']
 
 
 # Application definition
