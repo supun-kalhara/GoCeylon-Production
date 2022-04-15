@@ -28,7 +28,7 @@ SECRET_KEY = 'a$+jxf9twh)7!ghj*jtfe3iar5b^cfzmmw_)t0jfn8d7$-qg&b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1:8000', 'goceylon.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'goceylon.herokuapp.com']
 
 
 # Application definition
@@ -136,8 +136,8 @@ MEDIA_URL = '/images/'
 #Static files directory
 STATICFILES_DIRS = [
     #BASE_DIR/'static'
-   BASE_DIR / 'static',
+   BASE_DIR / 'static'
 ]
 MEDIA_ROOT = BASE_DIR / 'static/images'
 
-#STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
+STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
