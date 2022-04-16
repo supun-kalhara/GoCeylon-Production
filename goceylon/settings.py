@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 #aws variables
 AWS_S3 = "https://qprabnd93g.execute-api.ap-southeast-1.amazonaws.com/ocrDev/apigw-s3-bkt-tess/"
@@ -65,7 +65,7 @@ ROOT_URLCONF = 'goceylon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "templates")],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'goceylon.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -128,7 +128,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
@@ -136,8 +136,8 @@ MEDIA_URL = '/images/'
 #Static files directory
 STATICFILES_DIRS = [
     #BASE_DIR/'static'
-   os.path.join(BASE_DIR, 'static')
+   BASE_DIR / 'static'
 ]
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+MEDIA_ROOT = BASE_DIR / 'static/images'
 
 #STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
