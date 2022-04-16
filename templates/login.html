@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static '/css/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
     
     
 </head>
@@ -15,7 +15,7 @@
 
 <div class="login-wrap">
     <div class="login-html">
-        <div class = "home-btn"><a href="{% url 'home-view' %}"><input type="image" src="{% static '/img/home-button.png' %}" name="submit" width="65" height="auto" alt="Home"/></a>  </div>
+        <div class = "home-btn"><a href="{% url 'home-view' %}"><input type="image" src="{% static 'img/home-button.png' %}" name="submit" width="65" height="auto" alt="Home"/></a>  </div>
         <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
         <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
         <div class="login-form">
