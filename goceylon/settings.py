@@ -34,13 +34,13 @@ ALLOWED_HOSTS = ['127.0.0.1', 'goceylon.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    #"whitenoise.runserver_nostatic",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "whitenoise.runserver_nostatic",
 
     #Our apps
     'catalogue',
@@ -131,7 +131,7 @@ USE_TZ = True
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATIC_URL = '/static/'
-MEDIA_URL = '/images/'
+MEDIA_URL = 'static/images/'
 
 #Static files directory
 STATICFILES_DIRS = [
@@ -140,4 +140,4 @@ STATICFILES_DIRS = [
 ]
 MEDIA_ROOT = BASE_DIR / 'static/images'
 
-#STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
+STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
