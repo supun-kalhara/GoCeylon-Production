@@ -80,7 +80,7 @@ def register_view(request):
             form = CreateUserForm(request.POST)
             if form.is_valid():
                 form.save()
-                return redirect('login-view')
+                return render(request,'login.html',context)
         else:
             form=CreateUserForm()
             
@@ -101,7 +101,7 @@ def login_view(request, *args, **kwargs):
                 login(request, user)
                 return redirect('home-view')
             else:
-                messages.info(request, 'Username or Password is incorrect ' + username + ' ' + password)
+                messages.info(request, 'Username or Password is incorrect')
                 #render error messages using syntax in html file
                 #here
                 return render(request, "login.html", context)

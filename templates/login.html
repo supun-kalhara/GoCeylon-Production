@@ -12,13 +12,19 @@
     
 </head>
 
+<style>
+.errorlist li{
+  color: rgb(190, 47, 47);
+}
+</style>
+
 <body>
 
 
 <div class="login-wrap">
     <div class="login-html">
         <div class = "home-btn"><a href="{% url 'home-view' %}"><input type="image" src="{% static 'img/home-button.png' %}" name="submit" width="65" height="auto" alt="Home"/></a>  </div>
-        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+        <input id="tab-1" type="radio" name="tab" class="sign-in" onclick="redirectPage()" checked><label for="tab-1" class="tab">Sign In</label>
         <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
         <div class="login-form">
             <form method="POST" action="">
@@ -35,8 +41,12 @@
                     <div class="group">
                         <button type="submit" class="button" value="Sign In">Sign In</button>
                     </div>
+                    {% for message in messages %}
+                        <p style="color: rgb(190, 47, 47);">{{ message }}</p>
+                    {% endfor %}
                 </div>
             </form>
+            
             
             <div class="sign-up-htm">
                 <form role="form" method="POST" action="{% url 'register-view' %}">
@@ -56,11 +66,24 @@
                     <div class="group">
                         <input type="submit" class="button" value="Sign Up">
                     </div>
+                    {{ form.errors }}
                 </form>
             </div>
         </div>
     </div>
 </div>
+{% if form.errors %}
+<script>
+    document.getElementById("tab-2").checked = true;
+
+</script>
+{% endif %}
+
+<script>
+    function redirectPage(){
+        window.location.href = "{% url 'login-view' %}";
+    }
+</script>
 
 </body>
 
