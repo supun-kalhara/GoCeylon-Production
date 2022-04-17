@@ -80,12 +80,15 @@ def register_view(request):
             form = CreateUserForm(request.POST)
             if form.is_valid():
                 form.save()
+                context = {
+                    'msg': 'Registered Successfully, Please Login'
+                }
                 return render(request,'login.html',context)
         else:
             form=CreateUserForm()
             
         context = {'form':form}
-        return render(request,'login.html',context)
+        return render(request,'login.html', context)
 
 #login view
 def login_view(request, *args, **kwargs):

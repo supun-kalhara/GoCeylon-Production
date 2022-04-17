@@ -67,17 +67,22 @@
                         <input type="submit" class="button" value="Sign Up">
                     </div>
                     {{ form.errors }}
+                    {% if msg %}
+                        <p style="color: rgb(84, 218, 79);">{{msg}}</p>
+                    {% endif %}
                 </form>
             </div>
         </div>
     </div>
 </div>
-{% if form.errors %}
+{% if form.errors or msg%}
 <script>
     document.getElementById("tab-2").checked = true;
 
 </script>
 {% endif %}
+
+
 
 <script>
     function redirectPage(){
