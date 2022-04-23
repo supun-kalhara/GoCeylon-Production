@@ -1,8 +1,22 @@
-html {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
     background-color: rgb(203, 203, 209);
-  }
+    height: max-content;
+}
+
+body{
+    position: relative;
+    padding-bottom: 100px;
+    min-height: 100vh;
+}
 
 .rating-wrapper{
+    overflow: auto;
     margin:auto;
     position:relative;
     width:40%;

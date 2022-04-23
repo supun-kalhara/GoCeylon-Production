@@ -1,14 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  height: 100%;
+  height: max-content;
+}
+
 body {
   margin: 0;
   color: #999ca8;
   background: #c8c8c8;
   font: 600 16px/18px "Open Sans", sans-serif;
- 
-background: url("/static/img/GoCeylon.svg") ;
-background-repeat: no-repeat;
-background-position: 80% -10%;
-background-size: 35%;
+  background: url("/static/img/GoCeylon.svg") ;
+  background-repeat: no-repeat;
+  background-position: 80% -20%;
+  background-size: 35%;
+  position: relative;
+
 }
+
 *,
 :after,
 :before {

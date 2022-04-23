@@ -1,5 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    height: max-content;
+}
+
+body{
+    position: relative;
+    padding-bottom: 90px;
+    min-height: 100vh;
+}
+
+
 .pd-wrap {
-	padding: 40px 0;
+	padding: 45px 0;
 	font-family: "Poppins", sans-serif;
   }
 
@@ -28,14 +45,22 @@
 	left: 0;
 	overflow: hidden;
 }
-.item img{
-	object-fit: cover;
-}
 
 .star-ratings-css-bottom {
 	padding: 0;
 	display: block;
 	z-index: 0;
+}
+
+  .explore img{
+	  margin-top: 5px;
+	height: 45px;
+	width: auto;
+  }
+
+  .explore img:hover{
+	outline: 3px solid rgb(1, 18, 66); 
+	border-radius: 9px;
 }
 
 .star-ratings-sprite {
@@ -156,7 +181,7 @@
   }
   .reviews-counter {
 	font-size: 15px;
-	margin-top: 15px;
+	margin-top: 5px;
 	
   }
   .reviews-counter span {
@@ -265,6 +290,7 @@
   }
 
   .comment-tab{
+	  background-color: rgb(253, 253, 253);
     padding: 20px;
     margin: 0px 0px 12px 0px;
 	max-width: 870px;
@@ -310,7 +336,7 @@
 }
   
   .product-info-tabs {
-	margin-top: 25px;
+	margin-top: 45px;
 	width: 870px;
   }
   .product-info-tabs .nav-tabs {
@@ -450,7 +476,7 @@
 	line-height: 1.5;
 	color: #212529;
 	text-align: left;
-	background-color: #fafafa;
+	background-color: #f3f3f3;
   }
   [tabindex="-1"]:focus {
 	outline: 0 !important;
@@ -470,9 +496,11 @@
 	margin-bottom: 0.5rem;
   }
   p {
-	margin-top: 15px;
-	margin-bottom: 1rem;
+	margin-top: 10px;
+	font-weight: bold;
   }
+
+  
   abbr[data-original-title],
   abbr[title] {
 	text-decoration: underline;
@@ -536,6 +564,8 @@
 	text-decoration: none;
 	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
+	font-size: 20px;
+	text-align: left;
   }
  
   a:not([href]):not([tabindex]) {
@@ -757,10 +787,10 @@
 	line-height: 1.2;
   }
   hr {
-	margin-top: 1rem;
+	margin-top: 15px;
 	margin-bottom: 1rem;
 	border: 0;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 2px solid rgba(0, 0, 0, 0.1);
   }
   .small,
   small {
@@ -3997,7 +4027,7 @@
   .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link.active {
 	color: #495057;
-	background-color: #fff;
+	background-color: rgb(253, 253, 253);
 	border-color: #dee2e6 #dee2e6 #fff;
   }
   .nav-tabs .dropdown-menu {
@@ -8640,10 +8670,8 @@
 
 
 .explore {
-	margin-top: 0%;
 	text-align: center;
 	float: left;
-	margin-top: 30px;
 }
 
 
@@ -8795,6 +8823,7 @@
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
+  background: url(owl.video.play.png) no-repeat;
   cursor: pointer;
   z-index: 1;
   transition: transform 0.1s ease;

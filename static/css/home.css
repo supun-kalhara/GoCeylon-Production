@@ -1,4 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+html{
+    height: 100%;
+    height: max-content;
+}
+
+body{
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 100vh;
+}
 
 .navbar-default .navbar-brand {
 	font-family: Verdana;
@@ -166,11 +180,10 @@
 
 .imagemain {
 	padding-top: 700px;
-	background-image: url("/static/img/GoCeylon.svg");
+	background-image: url("/static/img/GoCeylon.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 40%;
-  
   
 }
 
@@ -201,11 +214,12 @@
   }
   
   .text {
-	font-size: 13px;
+	font-size: 16px;
 	color: #545454;
 	line-height: 30px;
 	text-align: justify;
 	margin-bottom: 40px;
+	font-weight: 600;
   }
   
   .skills {
@@ -260,6 +274,7 @@
 		padding: 30px;
 		padding-bottom: 5px;
 	  }
+	  
   }
   
 

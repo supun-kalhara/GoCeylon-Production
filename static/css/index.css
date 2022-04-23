@@ -1,11 +1,24 @@
-html,
-body {
+
+* {
   margin: 0;
+  padding: 0;
+}
+
+html{
+  height: 100%;
+  background-color: rgb(203, 203, 209);
+  height: max-content;
+}
+
+body{
+  position: relative;
+  padding-bottom: 100px;
+  min-height: 100vh;
 }
 
 .image {
   padding: 260px 0px;
-  background-image: url("/static/img/GoCeylon.svg");
+  background-image: url("/static/img/GoCeylon.png");
 	background-repeat: no-repeat;
 	background-position: center center;
   background-size: 35%;

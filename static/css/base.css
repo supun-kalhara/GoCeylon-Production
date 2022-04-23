@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', 'Arial', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+html, body{
+  height: 100%;
 }
 
 /* BASIC SETUP */
@@ -63,22 +71,35 @@
 
 .nav-item1 a {
   color: #000;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   text-decoration: none;
   transition: color 0.3s ease-out;
   
 }
 
+
 .nav-item2 a {
   color: #000;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 650;
   text-decoration: none;
   transition: color 0.3s ease-out;
   margin-left: 60px;
   
 }
+
+.nav-item11 a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+  margin-left: 25px;
+  
+}
+
+
 
 .nav-item1 a:hover {
   color: #3498db;
@@ -86,6 +107,11 @@
 }
 
 .nav-item2 a:hover {
+  color: #3498db;
+  
+}
+
+.nav-item11 a:hover {
   color: #3498db;
   
 }
@@ -205,13 +231,12 @@
     font-size: 25px;
     margin-right: 0px;
     
-    
   }
 
   .nav-item1 a {
     color: #000;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease-out;
     
@@ -220,11 +245,20 @@
   .nav-item2 a {
     color: #000;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease-out;
     margin-left: 0px;
 
+  }
+
+  .nav-item11 a {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+    margin-left: 0px;
   }
 
   
@@ -267,6 +301,9 @@ footer {
   background: #1a1e25;
   color: #868c96;
   height: 90px;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
