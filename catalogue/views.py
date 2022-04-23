@@ -177,6 +177,7 @@ def destination_view(request,d_id):
     }
     return HttpResponse(template.render(context,request))
 
+#translated page
 def translated_view(request, *args, **kwargs):
     if request.method == 'POST':
         body = request.POST.get('text-body')
