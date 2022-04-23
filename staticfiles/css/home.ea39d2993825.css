@@ -68,17 +68,17 @@ body{
 
 .carousel .background.a {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.048)),
-		url("/static/img/sea.jpg");
+		url("/static/img/sea.999ed253f1f0.jpg");
 }
 
 .carousel .background.b {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-	url("/static/img/sea2.jpg");
+	url("/static/img/sea2.427c9258a379.jpg");
 }
 
 .carousel .background.c {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-	url("/static/img/sea.jpg");
+	url("/static/img/sea.999ed253f1f0.jpg");
 }
 
 .carousel-fade .carousel-inner .item {
@@ -180,7 +180,7 @@ body{
 
 .imagemain {
 	padding-top: 700px;
-	background-image: url("/static/img/GoCeylon.png");
+	background-image: url("/static/img/GoCeylon.011992399064.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 40%;
@@ -192,7 +192,7 @@ body{
 }
 
   .about-section {
-	background: url('/static/img/sea2.jpg')
+	background: url("/static/img/sea2.427c9258a379.jpg")
 	  no-repeat left;
 	background-size: 55%;
 	background-color: #fdfdfd;
@@ -236,7 +236,7 @@ body{
 
 	.imagemain {
 		padding-top: 800px;
-		background-image: url("/static/img/GoCeylon.svg");
+		background-image: url("/static/img/GoCeylon.52d5f465bb9a.svg");
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: 45%;
@@ -256,7 +256,7 @@ body{
 
 	.imagemain {
 		padding-top: 800px;
-		background-image: url("/static/img/GoCeylon.svg");
+		background-image: url("/static/img/GoCeylon.52d5f465bb9a.svg");
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: 70%;
@@ -282,7 +282,7 @@ body{
 
 	.imagemain {
 		padding-top: 820px;
-		background: url("/static/img/GoCeylon.svg");
+		background: url("/static/img/GoCeylon.52d5f465bb9a.svg");
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: 95%;
@@ -297,7 +297,7 @@ body{
 
 	.carousel .background.a {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.048)),
-			url("/static/img/sea.jpg");
+			url("/static/img/sea.999ed253f1f0.jpg");
 
 		margin-top: -120px;
 	}
