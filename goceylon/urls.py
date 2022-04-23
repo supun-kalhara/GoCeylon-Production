@@ -17,7 +17,6 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
-from django.views.generic.base import RedirectView
 # from django.views.static import serve
 # from django.conf.urls import url
 
@@ -37,14 +36,14 @@ from catalogue.views import (
 )
 
 urlpatterns = [
-    path('',index_view, name='index-view'),
+    path('', index_view, name='index-view'),
     path('admin/', admin.site.urls),
     path('catalogue/', catalogue_view, name='catalogue-view'),
     path('index/', index_view, name='index-view'),
     path('home/', home_view, name='home-view'),
     path('<d_id>/rate', Rate, name='rate-destination'),
     path('base/', base_view, name='base-view'),
-    path('register/',register_view, name='register-view'),
+    path('register/', register_view, name='register-view'),
     path('login/', login_view, name='login-view'),
     path('logout/', logout_user, name='logout'),
     path('<d_id>/destination', destination_view, name='destination-view'),
