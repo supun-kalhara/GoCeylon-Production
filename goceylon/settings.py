@@ -44,7 +44,6 @@ INSTALLED_APPS = [
 
     #Our apps
     'catalogue',
-    'ocr',
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
