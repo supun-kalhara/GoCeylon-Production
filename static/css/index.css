@@ -18,7 +18,7 @@ body{
 
 .image {
   padding: 260px 0px;
-  background-image: url("/static/img/GoCeylon.png");
+  background-image: url("/static/img/GoCeylon.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
   background-size: 35%;

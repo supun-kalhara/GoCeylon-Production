@@ -180,7 +180,7 @@ body{
 
 .imagemain {
 	padding-top: 700px;
-	background-image: url("/static/img/GoCeylon.png");
+	background-image: url("/static/img/GoCeylon.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 40%;
